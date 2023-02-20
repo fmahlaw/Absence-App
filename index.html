@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Absence App</title>
+  </head>
+  <body>
+    <h1>Absence App</h1>
+
+    <form id="login-form">
+      <h2>Login</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="submit">Login</button>
+    </form>
+
+    <form id="absence-request-form">
+      <h2>Request Absence</h2>
+      <label for="employee-name">Employee Name:</label>
+      <input type="text" id="employee-name" name="employee-name" required />
+
+      <label for="start-date">Start Date:</label>
+      <input type="date" id="start-date" name="start-date" required />
+
+      <label for="end-date">End Date:</label>
+      <input type="date" id="end-date" name="end-date" required />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <ul id="absence-request-list"></ul>
+
+    <script src="absenceManager.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
